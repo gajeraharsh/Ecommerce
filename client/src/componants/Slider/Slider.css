@@ -1,0 +1,155 @@
+.Slider {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.Slider_darkness {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 100%;
+
+  transition-duration: 0.5s;
+}
+
+.sliderimg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+
+  transition-duration: 1s ease;
+}
+
+.sliderimg.active {
+  opacity: 1;
+  transition-duration: 1s;
+}
+
+.sliderimg img {
+  width: 100%;
+  height: 100%;
+}
+
+.Slider_leftsideIcon {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  font-size: 4.4vmax;
+  color: rgb(255 255 255 / 30%);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.Slider_rightsideIcon {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  font-size: 4.4vmax;
+  color: rgb(255 255 255 / 30%);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.Slider_leftsideIcon:hover,
+.Slider_rightsideIcon:hover {
+  color: #007bff;
+}
+.SliderInner_Div {
+  width: 50%;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Slider_InText1 {
+  font-size: 2vmax;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  animation: First 0.6s linear;
+}
+.Slider_InText2 {
+  font-size: 5vmax;
+  font-family: "Roboto", sans-serif;
+  margin: 2vmax 0vmax;
+  animation: Second 0.8s linear;
+}
+.btn_Slider {
+  z-index: 5555;
+  width: 13vmax;
+  cursor: pointer;
+  padding: 1vmax 2vmax;
+  border-radius: 2.3vmax;
+  background-color: #717fe0;
+  transition: all 0.3s;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: Third 0.8s linear;
+}
+.btn_Slider a {
+  color: #fff;
+}
+
+.btn_Slider:hover {
+  background-color: #fff;
+}
+.btn_Slider:hover a {
+  color: black;
+}
+
+/* media query */
+@media screen and (max-width: 480px) {
+  .Slider {
+    height: 80vh;
+  }
+  .SliderInner_Div {
+    width: 100%;
+  }
+  .Slider_InText1 {
+    color: white;
+  }
+  .Slider_InText2 {
+    color: white;
+  }
+  .btn_Slider {
+    width: 20vmax;
+    padding: 1.5vmax 2vmax;
+  }
+}
+
+/* Key frames */
+@keyframes Second {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes First {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes Third {
+  from {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,124 @@
+/* Footer */
+.Footer_back {
+  background-color: #222;
+  padding: 3vmax 0vmax;
+  flex-direction: column;
+  margin-top: 20vmax;
+}
+.Footer {
+  width: 90%;
+  max-width: 90%;
+  display: flex;
+  justify-content: space-around;
+  color: #b2b2b2;
+}
+
+.Foo_call1 {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+.Foo_header {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.2vmax;
+  padding: 2vmax 0vmax;
+  color: #fff;
+}
+.Foo_call1 li {
+  padding: 0.5vmax 0vmax;
+}
+.Foo_call1 a {
+  color: #b2b2b2;
+}
+.Foo_call2 {
+  width: 30%;
+}
+
+.Foo_call3 {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 1vmax 0vmax;
+}
+.form input[type="email"] {
+  width: 85%;
+  border: 0;
+  border-bottom: 2px solid gray;
+  outline: 0;
+  font-size: 1.3rem;
+  color: #fff;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.newsletter:focus {
+  border-bottom: 2px solid #717fe0 !important;
+}
+
+/*  button */
+.btn_square {
+  width: 13vmax;
+  cursor: pointer;
+  padding: 1vmax 2vmax;
+  border-radius: 2.3vmax;
+  background-color: #717fe0;
+  transition: all 0.3s;
+  color: #fff;
+}
+.btn_square:hover {
+  background-color: #fff;
+  border-color: #fff;
+  color: #717fe0;
+}
+.copyright {
+  text-align: center;
+  color: #fff;
+}
+/* keyframs */
+
+/* responseiv mobile view */
+@media screen and (max-width: 480px) {
+  .Footer {
+    flex-direction: column;
+  }
+  .Foo_call1 {
+    width: 100%;
+    align-items: center;
+  }
+  .Foo_header {
+    font-size: 2.2vmax;
+  }
+  .Foo_call2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Foo_call3 {
+    width: 100%;
+    justify-content: center;
+  }
+  .Foo_call1,
+  .Foo_call2,
+  .Foo_call3 {
+    margin-top: 1vmax;
+  }
+
+  .form {
+    align-items: center;
+  }
+  .btn_square {
+    width: 25vmax;
+    padding: 2vmax 2vmax;
+    margin: 2vmax 0vmax;
+  }
+}

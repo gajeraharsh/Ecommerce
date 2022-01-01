@@ -1,0 +1,188 @@
+.m-t {
+  margin-top: 6vmax;
+}
+.Cart_container {
+  width: 93%;
+  display: flex;
+  justify-content: space-around;
+}
+.Cart_Section1 {
+  width: 60%;
+  overflow: auto;
+  border-left: 1px solid #e6e6e6;
+  border-right: 1px solid #e6e6e6;
+}
+.table_shoping_cart {
+  border-collapse: collapse;
+  width: 100%;
+  display: table;
+  text-indent: initial;
+  border-spacing: 2px;
+  border-color: gray;
+}
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: initial;
+}
+
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+.table_head {
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+.column {
+  font-family: Poppins-Bold;
+  font-size: 13px;
+  color: #555;
+  text-transform: uppercase;
+  line-height: 1.6;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: left;
+}
+.column_1 {
+  width: 133px;
+  padding-left: 50px;
+}
+.column_2 {
+  width: 220px;
+}
+.column_3 {
+  width: 120px;
+}
+.column_4 {
+  width: 145px;
+  text-align: right;
+}
+.column_5 {
+  width: 172px;
+  padding-right: 50px;
+  text-align: right;
+}
+.table_row {
+  height: 185px;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+.Cartproduct_image {
+  width: 60px;
+  position: relative;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.Cartproduct_image img {
+  width: 100%;
+  vertical-align: middle;
+  border-style: none;
+}
+.cartproductcounter {
+  padding-bottom: 20px;
+}
+.Cart_Section2 {
+  width: 35%;
+  border: 1px solid #e6e6e6;
+}
+.Cartsection_wraper {
+  padding-top: 3vmax;
+  padding-left: 3vmax;
+}
+.Cartsectiontitle {
+  font-weight: 700;
+  font-size: 1.7vmax;
+  padding-bottom: 1vmax;
+}
+.Cartsectiontotal {
+  font-size: 1.3vmax;
+  font-weight: 600;
+  padding: 2vmax 0px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.Cartsectiontotal span {
+  padding-left: 2vmax;
+  font-weight: 400;
+}
+.Cartsectionshipping {
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid #e6e6e6;
+}
+.Cartsectionshipping h3 {
+  font-size: 1.3vmax;
+  font-weight: 600;
+  padding: 2vmax 0px;
+}
+
+.Cartsectioninfo {
+  padding-left: 2vmax;
+}
+.Cartsectioninfo p {
+  padding: 1vmax 0;
+  color: #888;
+}
+.Cartinput_compo {
+  width: 100%;
+  padding: 0.5vmax 0;
+}
+
+.Cartinput {
+  width: 100%;
+  height: 3vmax;
+}
+
+.Cartinput::placeholder {
+  font-size: 1.3vmax;
+  padding-left: 1vmax;
+}
+.Cartinput:focus {
+  outline: none;
+}
+.space_padding {
+  height: 2vmax;
+}
+.CartTotale_title {
+  font-size: 2vmax;
+  font-weight: 500;
+  padding: 2vmax 0px;
+  padding-left: 3vmax;
+}
+.CartTotale_title span {
+  font-weight: 400;
+  padding-left: 2vmax;
+  font-size: 1.7vmax;
+}
+.cartone_button {
+  margin-top: 1vmax;
+}
+.btn_cart {
+  background-color: black;
+  width: auto;
+  padding: 1.3vmax 1.4vmax;
+}
+.btn_cart:hover {
+  background-color: #717fe0;
+}
+.btn_cart:hover a {
+  color: #fff;
+}
+@media screen and (max-width: 480px) {
+  .Cart_Section1 {
+    width: 100%;
+  }
+  .Cart_container {
+    flex-direction: column;
+  }
+  .table_shoping_cart {
+    width: calc(100% + 400px);
+  }
+  .Cart_Section2 {
+    width: 100%;
+  }
+  .btn_cart {
+    padding: 2vmax 2vmax;
+  }
+}

@@ -1,0 +1,32 @@
+/* Universal sellector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+/* possition adjects */
+.abc {
+  position: absolute;
+  width: 100%;
+}
+
+.abc.active {
+  top: 6vmax;
+}

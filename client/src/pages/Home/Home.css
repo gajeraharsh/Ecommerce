@@ -1,0 +1,24 @@
+.CategoryCard_View {
+  width: 100%;
+  height: auto;
+  margin: 2vmax 0vmax;
+  display: flex;
+  justify-content: space-around;
+}
+.ProductsCardsMaindiv {
+  width: 95%;
+  margin-top: 4vmax;
+  display: flex;
+  flex-wrap: wrap;
+}
+/* mobile */
+@media screen and (max-width: 480px) {
+  .CategoryCard_View {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ProductsCardsMaindiv {
+    flex-direction: column;
+    align-items: center;
+  }
+}

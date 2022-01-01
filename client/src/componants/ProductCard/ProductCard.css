@@ -1,0 +1,86 @@
+.ProductCard {
+  width: calc(100% / 4);
+  padding: 1.2vmax 1vmax;
+  position: relative;
+}
+.ProductCard1 {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.ProductCardImg {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  border-style: none;
+  transition: 0.8s;
+  transform: scale(1);
+}
+.ProductCardImg:hover {
+  transform: scale(1.2);
+}
+.ProductCardButton {
+  position: absolute;
+  bottom: 2vmax;
+  border-radius: 20px;
+  background-color: #fff;
+  min-width: 10vmax;
+  height: 3vmax;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: bottom 0.7s ease;
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.4s;
+}
+.ProductCardButton:hover {
+  background-color: #000;
+  color: #fff;
+}
+.ProductCard1:hover .ProductCardButton {
+  opacity: 1;
+  bottom: 8vmax;
+}
+
+.ProductCard2 {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0px 5px 0px;
+}
+.Icon_ProductCardLike {
+  cursor: pointer;
+  font-size: 1.7vmax;
+}
+.ProductCard3 {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0px;
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+  .ProductCard {
+    width: 100%;
+  }
+  .ProductCardButton {
+    opacity: 1;
+    bottom: 15vmax;
+    min-width: 20vmax;
+    height: 5vmax;
+  }
+  .ProductCard1:hover .ProductCardButton {
+    opacity: 1;
+    bottom: 15vmax;
+    min-width: 20vmax;
+    height: 5vmax;
+  }
+  .Icon_ProductCardLike {
+    cursor: pointer;
+    font-size: 3.5vmax;
+  }
+}

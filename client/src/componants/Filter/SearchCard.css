@@ -1,0 +1,54 @@
+.SearchCard_Container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.SearchCard {
+  width: 93%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 3s;
+  height: 0;
+  overflow-y: hidden;
+}
+
+.SearchCard.CloseSearchCard {
+  height: auto;
+}
+
+.SearchCard_Box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #e6e6e6;
+}
+.SearchCardIconBox {
+  width: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.SearchCardInputBox {
+  width: 95%;
+}
+.SearchCardInput {
+  width: 100%;
+  height: 4vmax;
+  border: none;
+  font-size: 1.5vmax;
+}
+.SearchCardInput:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 480px) {
+   .SearchCard_Box{
+     border-width: 2px;
+   }
+  .SearchCardInput {
+    height: 6vmax;
+  }
+}
